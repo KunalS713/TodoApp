@@ -1,0 +1,189 @@
+/* for whole conatiner */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* root tag for all element */
+  
+  html {
+    font-size: 64%;
+  }
+  
+  /* main body part */
+  body {
+    font-family: Helvetica;
+    margin: 25px;
+    background: #f5fffa;
+  }
+  
+  /* h1 style */
+  h1 {
+    font-size: 4rem;
+    padding: 10px;
+    color:black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  /* styling text input */
+  input[type="text"] {
+    font-size: 1.8rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+  /* styling date input */
+  input[type="date"] {
+    font-size: 1.8rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    /* text-decoration: none; */
+  }
+  /* styling all label  */
+  label {
+    display: block;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    padding: 4px;
+  }
+  
+  /* styling all container */
+  .container {
+    background-color: #eee;
+    border-radius: 1%;
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: -1px -1px 6px 8px #d3d3d3;
+  }
+  
+  .container h1 {
+    text-align: center;
+  }
+  
+  .container .row {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+  }
+  
+  .col-1-of-2 {
+    width: 50%;
+  }
+  
+  .col-1-of-1 {
+    width: 100%;
+  }
+  
+  /* select for all */
+  select {
+    width: 100%;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  /* button style for add and delete */
+  button {
+    display: inline-block;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 22px;
+    padding: 20px;
+    width: 200px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  /* style for add button */
+  button:nth-of-type(1) {
+    background-color: rgb(102, 122, 102);
+  }
+  
+  button:nth-of-type(1):hover {
+    background-color: rgb(12, 70, 12);
+  }
+  
+  /* style for delete button */
+  button:nth-of-type(2) {
+    background-color: #b34343;
+  }
+  
+  button:nth-of-type(2):hover {
+    background-color: rgb(192, 22, 22);
+  }
+  
+  [class^="col-"] {
+    padding: 2rem;
+  }
+  
+  [class^="col-"]:hover {
+    background-color: rgb(198, 219, 218);
+  }
+  
+  /* for all li elements */
+  li {
+    padding: 20px;
+    font-size: 1rem;
+    position: relative;
+    border-top: 1px solid gray;
+    transition: all 1s;
+  }
+  
+  /* for selecting elements whose class attribute is todo__description */
+  [class="todo__description"] {
+    font-size: 2rem;
+    margin-left: 1rem;
+    top: 3rem;
+  }
+  
+  /* for selecting elements whose class attribute is todo__category */
+  [class^="todo__category"] {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 0.6rem;
+    color: white;
+    position: absolute;
+    right: 2rem;
+    top: 2.6rem;
+    padding: 10px;
+  }
+  
+  /* for selecting elements whose class attribute is todo__description */
+  .todo__dueDate {
+    display: block;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  /* for coloring different category */
+  .todo__category-personal {
+    background-color: blue;
+  }
+  
+  .todo__category-work {
+    background-color: hsla(240, 100%, 50%, 0.534);
+  }
+  
+  .todo__category-school {
+    background-color: red;
+  }
+  
+  .todo__category-cleaning {
+    background-color: green;
+  }
+  
